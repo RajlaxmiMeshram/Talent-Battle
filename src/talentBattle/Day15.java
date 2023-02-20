@@ -8,39 +8,38 @@ package talentBattle;
 
 import java.util.Scanner;
 
-public class Day15 {
 
-   public static int numfact(int a)
-   {
-	   if(a==0)
-	   {
-		   return 1;
-	   }else
-	   {
-		   return a * numfact(a-1);
-	   }
-   }
-   public static boolean strongnum(int n)
-   {
-	   int sum=0;
-	   int temp = n;
-	   while(temp>0)
-	   {
-		   int digit = temp % 10;
-		   sum = sum+ numfact(digit);
-	   }
-	   return sum == n;
-   }
-   
-   public static void main(String[] args)
-   {
-	   Scanner sc = new Scanner(System.in);
-	   int n = sc.nextInt();
-	   if (strongnum(n)) {
-           System.out.println(n+ " is a strong number");
-       } else {
-           System.out.println(n + " is not a strong number");
-       }
-   }
+public class Day15 {
+    
+    public static int factorial(int num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        } else {
+            return num * factorial(num - 1);
+        }
+    }
+
+    public static boolean isStrongNumber(int num) {
+        int sum = 0;
+        int originalNum = num;
+
+        while (num > 0) {
+            int digit = num % 10;
+            sum += factorial(digit);
+            num /= 10;
+        }
+
+        return sum == originalNum;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        if (isStrongNumber(num)) {
+            System.out.println(num + " is a strong number.");
+        } else {
+            System.out.println(num + " is not a strong number.");
+        }    
+    }
 }
 
