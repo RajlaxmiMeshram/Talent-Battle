@@ -1,3 +1,7 @@
+/*Day 12 coding Statement:  Write a program to find Sum of digits of a number
+Description
+Get a number from user and then find the sum of the digits in the given number.
+*/
 package talentBattle;
 import java.util.*;
 import java.util.Scanner;

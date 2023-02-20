@@ -1,3 +1,8 @@
+
+/*Day 4 coding Statement:  Write a program to identify of the a number is positive or negative
+Description
+Get an input number from the user and check whether it is a positive or negative number.
+*/
 package talentBattle;
 
 import java.util.Scanner;

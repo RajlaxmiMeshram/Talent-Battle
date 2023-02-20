@@ -1,3 +1,8 @@
+/*
+Day 7 coding Statement:  Write a program to find Number of days in a given month of a given year
+Description
+Get the number of month and year as input from the user and check the number of days present in that month.*/
+
 package talentBattle;
 
 import java.util.Scanner;

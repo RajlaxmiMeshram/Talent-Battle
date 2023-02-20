@@ -1,3 +1,7 @@
+/*Day 2 coding Statement : Write a program to identify if the character is an alphabet or not.
+Description:
+Take an input character from user and check whether it is an alphabet or not.*/
+
 package talentBattle;
 
 import java.util.Scanner;
