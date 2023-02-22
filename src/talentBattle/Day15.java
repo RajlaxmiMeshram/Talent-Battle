@@ -5,7 +5,9 @@ E.g. let the number be 145
 Here 1! + 4! + 5! is 1 + 24 + 120 which is equal to 145 itself.*/
 
 package talentBattle;
-
+/*Day 16 coding Statement : Write a program to identify if the number is Perfect number or not
+Description
+Get the input from the user and check whether that number is a perfect number or not.*/
 import java.util.Scanner;
 
 
